@@ -1,0 +1,144 @@
+/* Landon Baker 3/11/2024 */
+
+/* Global Backgrounds, Colors, and Widths */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+header, ul, #content-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: black;
+}
+
+/* logo */
+header img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+header {
+    position: relative;
+}
+
+header h1, nav ul {
+    padding-left: 50px;
+}
+
+/* Navbar */
+nav {
+    background-color: black;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul a {
+    display: inline-block;
+    padding: 1rem;
+    font: bold;
+    text-decoration: none;
+    color: white;
+}
+
+ul a:hover {
+    background-color: black;
+    color: red;
+}
+
+/* Home Page Main Image */
+main article img {
+    border: 3px double #333;
+    float: left;
+    margin: .5rem 1rem .5rem 0;
+}
+
+/* Home Page Bottom Columns */
+main section {
+    display: flex;
+}
+
+main section div{
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-right: 1rem;
+    flex: 1;
+    text-align: center;
+}
+
+#bam {
+    margin-right: 0;
+}
+
+main section div h2 {
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    margin-top: 0;
+}
+
+main section div img {
+    border: 3px double #333;
+    display: block;
+    margin: auto;
+}
+
+/* Sidebar */
+aside section {
+    background-color: white;
+    margin-bottom: 1rem;
+    border: 1px solid white;
+}
+
+aside h3 {
+    background-color: white;
+    color: black;
+    padding: .5rem;
+    margin: 0 0 0 0;
+}
+
+aside a {
+    display: inline-block;
+    padding: .5rem;
+}
+
+/* Home Page Columns */
+#content-wrapper {
+    display: flex;
+}
+
+aside {
+    order: 2;
+    flex: 1;
+    background-color: black;
+    margin-right: 1rem;
+    padding: .5rem;
+    position: relative;
+    top: 20px;
+    flex: 1;
+}
+
+aside h2 {
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+#content-wrapper main {
+    order: 3;
+}
