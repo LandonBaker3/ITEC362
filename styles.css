@@ -10,24 +10,13 @@ body {
     line-height: 1.5;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
+    background-color: rgb(60, 14, 14); /* Set background color to dark red */
+    color: white; /* Set text color to white */
 }
 
-header, ul, #content-wrapper {
-    width: 90%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-a {
-    color: black;
-}
-
-/* logo */
-header img {
-    position: absolute;
-    top: 0px;
-    left: 0px;
+.header-container {
+    position: relative;
+    padding-top: 120px; /* Adjust as needed */
 }
 
 header {
@@ -41,6 +30,11 @@ header h1, nav ul {
 /* Navbar */
 nav {
     background-color: black;
+    text-align: left; /* Align text to the left */
+}
+
+ul {
+    padding-left: 0; /* Remove default padding */
 }
 
 li {
@@ -63,40 +57,26 @@ ul a:hover {
 
 /* Home Page Main Image */
 main article img {
-    border: 3px double #333;
-    float: left;
-    margin: .5rem 1rem .5rem 0;
-}
-
-/* Home Page Bottom Columns */
-main section {
-    display: flex;
-}
-
-main section div{
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin-right: 1rem;
-    flex: 1;
-    text-align: center;
-}
-
-#bam {
-    margin-right: 0;
-}
-
-main section div h2 {
-    background-color: black;
-    border-radius: 10px 10px 0px 0px;
-    color: white;
-    margin-top: 0;
-}
-
-main section div img {
-    border: 3px double #333;
     display: block;
-    margin: auto;
+    margin: 0 auto; /* Center align images */
+    border: 3px double #333;
+}
+
+/* Center align content within the article */
+article {
+    text-align: center;
+    padding: 20px; /* Add padding to the article */
+}
+
+/* Center align images within figure elements */
+figure {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* Center align text within figcaption elements */
+figcaption {
+    text-align: center;
 }
 
 /* Sidebar */
@@ -141,4 +121,18 @@ aside h2 {
 
 #content-wrapper main {
     order: 3;
+}
+
+/* Move logo to top left */
+#logo {
+    position: absolute;
+    top: 10px; /* Adjust top position as needed */
+    left: 10px; /* Adjust left position as needed */
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
 }
